@@ -1,0 +1,80 @@
+/*Criação de Variaveis de Cor dentro do scopo */
+
+:root{
+    --vermelho:red;
+    --preta:black;
+}
+
+/* Elementos Globais da Pagina inteira.*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/* Elementos base do corpo da Pagina*/
+body
+{
+    background:var(--preta);
+    font-family:'Times New Roman',Times, serif;
+    color:white;
+
+
+}
+/*Elementos do Header classe Container*/
+header .container {
+    display:flex;
+    flex-direction:row;
+    text-align:center;
+    justify-content:space-between;
+    
+}
+/* Elementos do Logotipo da Netflix*/
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:40px;
+
+}
+/* Formatação dos Links href da <nav> barra de navegação da Netflix */
+
+header nav a{
+
+    text-decoration:none;
+    color:#AAA;
+    margin-right:10px;
+
+}
+/* componente para destacar o Menu quando passar o Mouse */
+header nav a:hover{
+   color:#fff;
+}
+.filme-principal{
+    /* Defini um tamanho de fonte abaixo: */
+    font-size:16px;
+    /* Defini uma imagem dentro da pasta Imagem abaixo: */
+
+    background:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),url('/NetFlix_Project/img/capa-house.jpg');
+
+    /*Estou definindo uma altura pra caixa abaixo: */
+
+    height:400px;
+    /*eu quero que ela pegue a area de cobertura: */
+    background-size:cover;
+
+    /*Utilizando nosso display flex */
+    /*Lembrando sempre que nosso display flex leva
+    em linha flex direction */
+    
+    display: flex;
+    /* estou jogando em colunas */
+    flex-direction: column;
+    /* usei um justify-content pra centralizar */
+    justify-content: center;
+    /* Pedi para alinhar os itens do começo.*/
+    align-items:flex-start;
+}
+/* Agora iremos estilizar os Botãoes que criamos dentro das divs <button id-botão>: */
+
+
+ 
